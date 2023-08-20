@@ -2,24 +2,18 @@
 {
     internal class Carriage
     {
-        private int _number;
-        private bool _light;
-
-        internal bool Light 
-        { 
-            get => _light; 
-            set => _light = value; 
-        }
-
+        private int Number { get; set; }
+        internal bool Light { get; set; }
+        
         internal Carriage(int number, bool light)
         {
-            _number = number;
+            Number = number;
             Light = light;
         }
 
         public override string ToString()
         {
-            return $"Вагон номер {_number}, свет включен: {Light}";
+            return $"Вагон номер {Number}, свет включен: {Light}";
         }
     }
 }
